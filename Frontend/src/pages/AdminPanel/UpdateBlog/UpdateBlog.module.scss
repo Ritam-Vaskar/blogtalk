@@ -1,0 +1,75 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  position: relative;
+
+  h1 {
+    font-size: 2rem;
+    color: #ff6a00;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 2px rgba(255, 122, 0, 0.5);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input,
+    textarea {
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+      &:focus {
+        border-color: #ff6a00;
+        box-shadow: 0 4px 8px rgba(255, 106, 0, 0.2);
+        outline: none;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 200px;
+    }
+
+    .updateButton {
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #ff6a00, #ffcc33);
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(255, 106, 0, 0.3);
+      }
+    }
+  }
+
+  .error {
+    font-size: 0.9rem;
+    color: #e74c3c;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+}
